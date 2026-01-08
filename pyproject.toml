@@ -1,0 +1,25 @@
+[project]
+name = "agentic-dev-template-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+	"pytest>=8",
+	"pytest-cov>=5",
+	"ruff>=0.6",
+	"ty",
+]
+
+[tool.pytest.ini_options]
+markers = [
+	"slow: slow tests (opt-in)",
+]
+
+[tool.ruff]
+extend-exclude = [
+	".venv",
+]

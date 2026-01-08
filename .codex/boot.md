@@ -1,0 +1,4 @@
+# Codex Boot (temporary stand-in for `.codex/boot.md`)
+- After loading `AGENTS.md`, apply these Codex-specific directives.
+- For review tasks, load and follow `.codex/agents/reviewer.md` (once available); until then, mirror `.claude/agents/reviewer.md` for defect-only reviews.
+- Use shared policies from `/policies` and context from `/context`; do not self-initiate beyond human direction.

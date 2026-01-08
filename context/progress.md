@@ -1,0 +1,1 @@
+<!-- Purpose: progress logging. Rotate to context/progress/YYYY-MM.md when this file grows large. Use entry format: `- YYYY-MM-DD HH:MM TZ | Who | What | Decision (採用/却下+理由) | Next actions` and include related diff/PR/commit ids. -->
