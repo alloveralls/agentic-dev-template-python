@@ -8,31 +8,35 @@ on:
 jobs:
   lint_and_test:
     runs-on: ubuntu-latest
+    if: false # Template placeholder; enable after defining stack/quality gates.
     steps:
-      - uses: actions/checkout@v4
+      - name: Placeholder
+        run: echo "CI disabled in template"
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version-file: .python-version
-          allow-prereleases: true
-          cache: pip
+      # - uses: actions/checkout@v4
 
-      - name: Set up uv
-        uses: astral-sh/setup-uv@v3
-        with:
-          enable-cache: true
+      # - name: Set up Python
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version-file: .python-version
+      #     allow-prereleases: true
+      #     cache: pip
 
-      - name: Install dependencies
-        run: uv sync --dev
+      # - name: Set up uv
+      #   uses: astral-sh/setup-uv@v3
+      #   with:
+      #     enable-cache: true
 
-      - name: Format (check)
-        run: uv run ruff format --check
+      # - name: Install dependencies
+      #   run: uv sync --dev
 
-      - name: Lint
-        run: |
-          uv run ruff check . --fix
-          uv run ty check
+      # - name: Format (check)
+      #   run: uv run ruff format --check
 
-      - name: Test
-        run: uv run pytest --cov=src --cov-fail-under=90
+      # - name: Lint
+      #   run: |
+      #     uv run ruff check . --fix
+      #     uv run ty check
+
+      # - name: Test
+      #   run: uv run pytest --cov=src --cov-fail-under=90

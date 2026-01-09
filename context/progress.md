@@ -1,1 +1,2 @@
 <!-- Purpose: progress logging. Rotate to context/progress/YYYY-MM.md when this file grows large. Use entry format: `- YYYY-MM-DD HH:MM TZ | Who | What | Decision (採用/却下+理由) | Next actions` and include related diff/PR/commit ids. -->
+- 2025-09-27 16:31 JST | Codex | Commented CI sample steps and added placeholder no-op with job disabled to avoid GitHub errors | 採用(実行ステップの無効化とサンプル保持の両立) | Next actions: user to confirm if placeholder/if:false is acceptable
