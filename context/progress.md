@@ -1,2 +1,4 @@
 <!-- Purpose: progress logging. Rotate to context/progress/YYYY-MM.md when this file grows large. Use entry format: `- YYYY-MM-DD HH:MM TZ | Who | What | Decision (採用/却下+理由) | Next actions` and include related diff/PR/commit ids. -->
 - 2025-09-27 16:31 JST | Codex | Commented CI sample steps and added placeholder no-op with job disabled to avoid GitHub errors | 採用(実行ステップの無効化とサンプル保持の両立) | Next actions: user to confirm if placeholder/if:false is acceptable
+- 2026-01-17 12:57 JST | Codex | Clarified reviewer activation instructions in AGENTS and boot docs | 採用(明示的なレビュー依頼時のみレビュー役に切替) | Next actions: commit and push changes
+- 2026-01-17 13:02 JST | Codex | Clarified Claude boot reviewer activation wording | 採用(レビュー依頼時のみレビューモード) | Next actions: commit and push change
